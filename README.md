@@ -40,8 +40,8 @@ A lightweight mobile app with an interactive digital guide mascot that helps use
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd AhoumDigitalGuide
+git clone https://github.com/Devdharpatil/Digital_Spirituality_App.git
+cd Digital_Spirituality_App
 ```
 
 2. Install dependencies:
