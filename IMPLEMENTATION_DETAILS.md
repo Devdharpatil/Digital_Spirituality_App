@@ -1,6 +1,6 @@
 # Implementation Details
 
-This document outlines how each requirement in the Ahoum Digital Guide App front-end technical challenge has been implemented.
+This document outlines how each requirement in the Digital Spirituality App has been implemented.
 
 ## Core Features Implementation
 
@@ -8,32 +8,35 @@ This document outlines how each requirement in the Ahoum Digital Guide App front
 - Implemented a bottom tab navigation with 5 icons using React Navigation's bottom tab navigator
 - Each tab (Home, Explore, Chat, Saved, Profile) has a distinct icon
 - Active tab is highlighted with the primary color
+- Fluid transitions and visual feedback for improved user experience
 - Navigation is wrapped in a proper NavigationContainer with SafeAreaProvider
 
 ### 2. Home Screen
-- Created a scrollable home screen displaying 4 "cards" with various content
+- Created a scrollable home screen displaying spiritual content cards
+- Content includes daily inspiration, meditation guides, and mindfulness practices
 - Each card has:
   - Consistent padding
   - Rounded corners
-  - Sample image
+  - Relevant spiritual imagery
   - Title and description
 - The screen is scrollable when content exceeds the viewport
 - Uses a reusable Card component for consistency
 
-### 3. Mascot
-- Implemented a floating mascot using the provided blue pet image
-- The mascot shows thought bubbles with guide information when tapped
-- The mascot explains different elements of the screen depending on context
+### 3. Interactive Mascot Guide
+- Implemented a floating mascot that serves as a digital spiritual guide
+- The mascot shows thought bubbles with contextual spiritual guidance when tapped
+- The mascot explains different elements of the spiritual journey depending on context
 - Interactive: can be tapped and dragged around the screen
 - Fluid movement using React Native Reanimated
+- Provides accessible spiritual guidance for users of all experience levels
 
 ### 4. Styling
 - Used Tailwind CSS approach with the twrnc library
-- Implemented a dark background with a custom theme
-- Added soft gradients to the card components
+- Implemented a responsive design that adapts to different screen sizes
+- Added soft gradients and spiritually-themed visual elements
 - Consistent spacing and typography throughout the app
 
-## Bonus Features Implementation
+## Additional Features Implementation
 
 ### 1. Animated Mascot
 - Added subtle bobbing animation using React Native Reanimated
@@ -42,12 +45,18 @@ This document outlines how each requirement in the Ahoum Digital Guide App front
 - Transitions for thought bubbles appearing and disappearing
 
 ### 2. State Management
-- Implemented Zustand for state management
+- Implemented Zustand for efficient state management
 - Created a mascot store to handle:
   - Current dialog content
   - Mascot position and visibility
   - Target element being explained
   - Animation state
+
+### 3. Spiritual Content Sections
+- Chat interface for spiritual discussions
+- Personalized profile management
+- Saved content functionality for spiritual resources
+- Explore section for discovering new spiritual content
 
 ## Project Structure
 
@@ -58,7 +67,7 @@ The project follows a clean and organized structure:
 3. `src/navigation`: Navigation configuration
 4. `src/store`: Zustand store for state management
 5. `src/theme`: Tailwind configuration and theme settings
-6. `src/assets`: Static assets including the mascot image
+6. `src/assets`: Static assets including the mascot image and spiritual content resources
 
 ## Technical Decisions
 
@@ -68,10 +77,6 @@ The project follows a clean and organized structure:
 4. **React Native Reanimated**: Used for performant animations
 5. **React Native Gesture Handler**: Implemented for smooth drag interactions with the mascot
 
-## Screenshots/Screen Recording
+## Design Philosophy
 
-Screenshots and screen recordings should be added to showcase:
-1. The navigation with active tab highlighting
-2. Home screen cards
-3. Mascot with thought bubble guides
-4. Animation of mascot in action 
+The app is designed to create a seamless and intuitive spiritual journey for users. The interactive mascot serves as a guide that provides contextual information and assistance when needed, making the app accessible to users of all experience levels.
